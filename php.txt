@@ -155,3 +155,37 @@ foreach($original as $t) {
                      } 
                     
                   }
+
+
+---sumar fechas --
+$fecha_actual = date("d-m-Y");
+//sumo 1 semana
+echo date("d-m-Y",strtotime($fecha_actual."+ 1 week")); 
+//resto 1 semana
+echo date("d-m-Y",strtotime($fecha_actual."- 1 week")); 
+
+$fecha_actual = date("d-m-Y");
+//sumo 1 mes
+echo date("d-m-Y",strtotime($fecha_actual."+ 1 month")); 
+//resto 1 mes
+echo date("d-m-Y",strtotime($fecha_actual."- 1 month"));
+
+$fecha_actual = date("d-m-Y");
+//sumo 1 año
+echo date("d-m-Y",strtotime($fecha_actual."+ 1 year"));
+//resto 1 año
+echo date("d-m-Y",strtotime($fecha_actual."- 1 year"));
+
+$fecha_actual = date("d-m-Y");
+//sumo 1 año
+echo date("d-m-Y",strtotime($fecha_actual."+ 1 year"));
+//resto 1 año
+echo date("d-m-Y",strtotime($fecha_actual."- 1 year"));
+
+
+
+--comparar--
+$fecha_actual = strtotime(date("d-m-Y H:i:00",time()));
+$fecha_entrada = strtotime("19-11-2008 21:00:00");
+	
+if($fecha_actual > $fecha_entrada)
